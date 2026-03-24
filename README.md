@@ -1,10 +1,11 @@
-# MCP + ADK AI Agent 🚀
+Weather MCP ADK Agent (Fixed Version)
 
-## Overview
-AI agent using Gemini + MCP (function calling) to fetch weather data and suggest meeting mode.
+Setup:
+chmod +x setup/setup_env.sh
+./setup/setup_env.sh
 
-## Run locally
-uvicorn main:app --reload
-
-## Endpoint
-/agent?city=Mumbai
+Run:
+python3 -m venv .venv
+source .venv/bin/activate
+pip install -r requirements.txt
+python run_agent.py
